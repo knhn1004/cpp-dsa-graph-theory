@@ -3,6 +3,7 @@ using namespace std;
 
 bool dfs(int node, int parent, vector<vector<int>> &adj, vector<int> &visited,
          int color = 1) {
+
   visited[node] = color;
   for (int nbr : adj[node]) {
     if (!visited[nbr]) {
